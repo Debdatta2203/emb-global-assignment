@@ -1,0 +1,11 @@
+.complaint-form-page {
+  padding: 0 6rem;
+
+  .page-heading {
+    margin-bottom: 1rem;
+    h1 {
+      color: #212529 !important;
+      margin: 10px 0;
+    }
+  }
+}

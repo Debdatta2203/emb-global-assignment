@@ -1,0 +1,53 @@
+.progress-bar {
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+
+  .progress-bar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+
+    .progress-bar-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25px;
+      height: 25px;
+
+      img {
+        height: 20px;
+        object-fit: contain;
+      }
+
+      .current-step {
+        height: 35px;
+        object-fit: contain;
+      }
+    }
+
+    .progress-line {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      width: 100%;
+      height: 2px;
+      border-bottom: 1px dashed #d3d3d3;
+      z-index: -1;
+    }
+    .progress-completed-line {
+      border-bottom: 1px dashed #0a3d62;
+    }
+  }
+  .progress-bar-item:last-child .progress-line {
+    display: none;
+  }
+}

@@ -1,9 +1,39 @@
-.complaint-type-item {
-  cursor: pointer !important;
-}
-.complaint-type-item:hover {
-  border-color: #0071bc !important;
-}
-.selected {
-  border-color: #0071bc !important;
+
+.complaint-type-page {
+  padding: 0 6rem;
+
+  .page-heading {
+    margin-bottom: 1rem;
+    h1 {
+      color: #212529 !important;
+      margin: 10px 0;
+    }
+  }
+  .complaint-type-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+    .complaint-type-item {
+      cursor: pointer !important;
+      width: 44%;
+    }
+    .selected {
+      background-color: #2E6DA4 !important;
+  
+      .card-header {
+        color: #fff !important;
+      }
+      .text-muted {
+        color: #fff !important;
+      }
+    }
+  }
+
+  .page-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
 }

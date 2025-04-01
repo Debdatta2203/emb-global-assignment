@@ -1,10 +1,27 @@
 import React, { useState } from "react";
+import ProgressBar from "../../components/ProgressBar";
 import "./style.css";
 
 const ComplaintForm = () => {
   // states
   const [formData, setFormData] = useState({
+    complainantAnonymous: null,
     complainantOrganizationName: "",
+    complainantOrganizationType: "",
+    complainantOrganizationTypeOther: "",
+    complainantOrganizationPhone: "",
+    complainantTitle: "",
+    complainantFirstName: "",
+    complainantMI: "",
+    complainantLastName: "",
+    complainantAddress1: "",
+    complainantAddress2: "",
+    complainantCity: "",
+    complainantState: "",
+    complainantZip: "",
+    complainantEmail: "",
+    complainantPhone: "",
+    complainantMobile: "",
   });
 
   // handle input change
@@ -36,7 +53,13 @@ const ComplaintForm = () => {
 
   return (
     <div>
-      <div className="page-content">
+      <div className="page-content complaint-form-page">
+        {/* progress bar */}
+        <ProgressBar currentStep={2} />
+        {/* page heading */}
+        <div className="page-heading">
+          <h1>Complainant Details</h1>
+        </div>
         <div className="form-container">
           {/* form */}
           <form onSubmit={handleFormSubmission}>

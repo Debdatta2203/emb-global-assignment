@@ -1,0 +1,76 @@
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  .page-details {
+    width: 60%;
+
+    .page-header {
+      background-color: #EDF3F8;
+      font-size: 16px;
+      font-weight: 500;
+      color: #2E6DA4;
+      padding: 10px;
+      width: fit-content;
+      border-radius: 10px;
+    }
+    .warning-text {
+      background-color: #FFF8FA;
+      color: #DC3563;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 25px;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 3rem;
+    }
+  }
+  .instructions-container {
+    width: 40%;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+    .instruction-item {
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-bottom: 40px;
+
+      .instruction-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #0a3d62;
+        padding: 10px;
+
+        img {
+          object-fit: contain;
+          height: 5rem;
+        }
+      }
+
+      .instruction-title {
+        margin-left: 15px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #333;
+      }
+
+      .instruction-line {
+        position: absolute;
+        left: 2.3rem;
+        top: 5rem;
+        width: 2px;
+        height: 40px;
+        background-color: transparent;
+        border-left: 2px dashed #0a3d62;
+      }
+    }
+  }
+}
