@@ -1,0 +1,27 @@
+.sidebar {
+    background-color: #fff;
+    padding: 30px 15px;
+    margin-top: 6rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    z-index: 999;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+    .menu-item {
+      font-weight: 500;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      img {
+        object-fit: contain;
+        height: 20px;
+      }
+    }
+}

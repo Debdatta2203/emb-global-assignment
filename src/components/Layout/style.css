@@ -1,0 +1,14 @@
+.layout-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 6rem;
+}
+
+.layout-content {
+    width: 80%;
+    height: 100%;
+    padding: 30px;
+}

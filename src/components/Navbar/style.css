@@ -1,0 +1,38 @@
+.navbar {
+    background-color: #EDF3F8;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar-logo {
+        width: 40%;
+        img {
+            object-fit: contain;
+            height: 45px;
+        }
+    }
+    .navbar-menu-links {
+        width: 60%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        .navbar-menu-link {
+            font-size: 16px;
+            font-weight: 300;
+            margin-right: 20px;
+        }
+        .active {
+            font-weight: 700 !important;
+        }
+    }
+}
