@@ -141,6 +141,7 @@ const ComplaintForm = () => {
     if(isFormValid()) {
       // convert form data to json
       const jsonData = JSON.stringify(formData, null, 2);
+      console.log( jsonData);
 
       // Create a blob and download the file
       const blob = new Blob([jsonData], { type: "application/json" });
@@ -207,7 +208,7 @@ const ComplaintForm = () => {
               <div className="card-body">
                 <div className="form-group">
                   <label className="w-70">
-                    ComplainantOrganization Name&nbsp;
+                    Complainant Organization Name&nbsp;
                     <span className="text-danger">*</span>
                     {/* complainant organization name error */}
                     {error?.complainantOrganizationName && (
