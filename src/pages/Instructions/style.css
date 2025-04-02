@@ -24,8 +24,8 @@
     position: relative;
     
     .instruction-item {
-      display: flex;
-      align-items: center;
+      display: flex !important;
+      align-items: center !important;
       position: relative;
       margin-bottom: 40px;
 
