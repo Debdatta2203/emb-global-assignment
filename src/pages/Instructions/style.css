@@ -16,16 +16,6 @@
       width: fit-content;
       border-radius: 10px;
     }
-    .warning-text {
-      background-color: #FFF8FA;
-      color: #DC3563;
-      font-size: 14px;
-      font-weight: 300;
-      line-height: 25px;
-      padding: 15px;
-      border-radius: 10px;
-      margin-bottom: 3rem;
-    }
   }
   .instructions-container {
     width: 40%;
